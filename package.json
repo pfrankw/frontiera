@@ -1,0 +1,23 @@
+{
+  "name": "frontiera",
+  "preferGlobal": "true",
+  "version": "0.1.2",
+  "description": "A real fast and versatile HTTP proxy.",
+  "main": "index.js",
+  "directories": {
+    "bin": "./bin",
+    "etc": "./etc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pfrankw",
+  "license": "MIT",
+  "bin": {
+    "frontiera": "./bin/frontiera"
+  },
+  "dependencies": {
+    "http-proxy": "^1.11.1",
+    "yargs": "^3.13.0"
+  }
+}

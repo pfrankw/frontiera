@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var argv = require('yargs').argv,
+    Frontiera = require('frontiera');
+
+var frontiera = new Frontiera( argv.port || 80, argv.configdir || '/etc/frontiera' );

@@ -1,0 +1,14 @@
+{
+  "host": ".*",
+  "target": "http://IP:PORT",
+  "log": {
+    "path": "/var/log/frontiera/{hostname}.log",
+    "format": "{isotime} {xforwardedfor} {remoteIP} {method} {path} {statusCode} \"{userAgent}\" {hostname}"
+  },
+  "cache": {
+    "ext": "(\\.jpg|\\.ico|\\.png|\\.html|\\.ttf|\\.css|\\.js)",
+    "time": 86400,
+    "dir": "/var/tmp/frontiera/cache"
+  }
+
+}
